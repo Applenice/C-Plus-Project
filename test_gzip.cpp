@@ -71,9 +71,9 @@ int gzDecompress(const char *src, int srcLen, const char *dst, int dstLen){
 
 int main()
 {
-	char* src = "just for test, dd, dd, dd";
+	char* src = (char*)"just for test, dd, dd, dd";
 	int size_src = strlen(src);
-	char* compressed = malloc(size_src*2);
+	char* compressed = (char*)malloc(size_src*2);
 	memset(compressed, 0, size_src*2);
 	printf("to compress src: %s\n", src);
 	printf("to compress src size: %d\n", size_src);
@@ -92,7 +92,7 @@ int main()
 	}
 	printf("\ncompressed size: %d\n", gzSize);
 
-	char* uncompressed = malloc(size_src*2);
+	char* uncompressed = (char*)malloc(size_src*2);
 	memset(uncompressed, 0, size_src*2);
 	int ret = gzDecompress(compressed, gzSize, uncompressed, size_src*2);
 	printf("uncompressed: %s\n", uncompressed);
