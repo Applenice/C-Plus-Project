@@ -7,6 +7,7 @@ $ make check
 $ sudo make install
 $ sudo ldconfig       # refresh shared library cache.
 
+
 程序处理：
 参照
 https://developers.google.com/protocol-buffers/docs/cpptutorial  进行操作
