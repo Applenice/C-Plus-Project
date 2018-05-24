@@ -1,0 +1,1 @@
+g++ -std=c++11 main.cpp ReadMnistData.cpp -o mnist `pkg-config --libs --cflags opencv` -ldl
