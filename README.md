@@ -11,3 +11,5 @@ https://blog.csdn.net/xiaowei_cqu/article/details/7557063
 ```
 g++ cv_image.cpp -o cv_image `pkg-config --libs --cflags opencv` -ldl
 ```
+
+5.mnist_images 将mnist数据集中图片单独提取,需要opencv
