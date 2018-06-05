@@ -17,7 +17,6 @@ int main()
 	cout << "-----------------------------" << endl;
 	rmd.Save_Mnist_Images(save_train_image_path, vec_train_images, vec_train_labels);		//保存train_images
 
-	//==================================================================================
 	/*读取测试文件并保存成图片格式*/
 	string filename_test_images = "./t10k-images-idx3-ubyte";		//test images 文件路径
 	string filename_test_labels = "./t10k-labels-idx1-ubyte";			//test labels 文件路径
